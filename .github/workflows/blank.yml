@@ -32,4 +32,4 @@ jobs:
           PERSONAL_TOKEN: ${{secrets.PERSONAL_TOKEN}}
           EXTERNAL_REPOSITORY: forgocode/forgocode.github.io
           PUBLISH_BRANCH: dev
-          PUBLISH_DIR: .
+          PUBLISH_DIR: ./public
