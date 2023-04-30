@@ -6,7 +6,7 @@ on:
     branches: [ "dev" ]
   workflow_dispatch:
   schedule: 
-    - cron: "0 0 12 ? * SUN"
+    - cron: '0 23 ? * SUN'
   
 jobs:
   build:
