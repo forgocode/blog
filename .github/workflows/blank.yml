@@ -19,7 +19,11 @@ jobs:
           fetch-depth: 0
           
       - name: SetUp Hugo
-        uses: lowply/build-hugo@v0.110.0
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.100.2'
+          # 是否启用 hugo extend
+          extended: true
         
       - name: Build Web
         run: hugo
