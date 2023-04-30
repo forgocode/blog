@@ -19,7 +19,7 @@ jobs:
           fetch-depth: 0
           
       - name: SetUp Hugo
-        uses: jsumners/gh-action-hugo-deploy@v1.0.0
+        uses: lowply/build-hugo@v0.110.0
         
       - name: Build Web
         run: hugo
