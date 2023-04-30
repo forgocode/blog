@@ -1,0 +1,35 @@
+# This is a basic workflow to help you get started with Actions
+
+name: BlogPublish
+on:
+  push:
+    branches: [ "dev" ]
+  workflow_dispatch:
+  schedule: 
+    - cron: "0 0 12 ? * SUN"
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: CheckOut
+      - uses: actions/checkout@v3
+        with:
+          submodules: true
+          fetch-depth: 0
+          
+      - name: SetUp Hugo
+        uses:  peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "latest"
+        
+      - name: Build Web
+        run: hugo
+        
+      - name: Deploy Web
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          PERSONAL_TOKEN: ${{secrets.PERSONAL_TOKEN}}
+          EXTERNAL_REPOSITORY: forgocode/forgocode.github.io
+          PUBLISH_BRANCH: dev
+          PUBLISH_DIR: .
