@@ -19,7 +19,7 @@ jobs:
           fetch-depth: 0
           
       - name: SetUp Hugo
-        uses: peaceiris/actions-hugo@v0.92.2
+        uses: peaceiris/actions-hugo@v0.74.2
         
       - name: Build Web
         run: hugo
