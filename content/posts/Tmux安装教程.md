@@ -1,5 +1,5 @@
 ---
-title: "Hugo安装教程"
+title: "Tmux安装教程"
 date: 2023-04-28T22:51:04+08:00
 draft: false #是否为草稿
 lastmod: "2023-04-28T22:51:04+08:00"
