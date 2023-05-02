@@ -1,4 +1,4 @@
-baseURL = "https://example.com"
+baseURL = "https://blog.rguo.top"
 theme = "LoveIt"
 title = "forgocode 的博客"
 defaultContentLanguage = "zh-cn"
@@ -95,7 +95,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   title = "LoveIt"
  
   # 网站图片, 用于 Open Graph 和 Twitter Cards
-  images = ["/logo.png"]
+  images = ["/images/avatar.jpg"]
 
 
   # 页面头部导航栏配置
