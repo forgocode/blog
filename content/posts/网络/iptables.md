@@ -1,7 +1,7 @@
 ---
 title: "Iptables"
 date: 2023-05-02T16:43:20+08:00
-draft: true #是否为草稿
+draft: false #是否为草稿
 lastmod: "2023-05-02T16:43:20+08:00"
 tags: [网络, Iptables] 
 categories: [网络]
